@@ -65,6 +65,7 @@ for N=10:10:1000
     temp1 = (a_ML-a0s);
     temp2 = temp1';
     sum1 = 0;sum2 = 0;sum3 = 0;
+    
     for i=1:1:Nrun
         temp2(i,:);
         temp1(:,i);
@@ -73,6 +74,7 @@ for N=10:10:1000
         sum2 = sum2 + temp2(i,2)*temp1(2,i);
         sum3 = sum3 + temp2(i,3)*temp1(3,i);
     end
+    
     sum1 = sum1/Nrun;
     sum2 = sum2/Nrun;
     sum3 = sum3/Nrun;
